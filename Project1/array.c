@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main_array(void)
 {
 	//배열
 	//int subway_1 = 30; //지하철 1호차에 30명이 타고 있다.
@@ -78,10 +78,66 @@ int main(void)
 	//	printf("%c\n", str[i]);
 	//}
 
-	char kor[] = "개발자";
-	printf("%s\n", kor);
-	printf("%d\n", sizeof(kor));
+	//char kor[] = "개발자";
+	//printf("%s\n", kor);
+	//printf("%d\n", sizeof(kor));
+	//영어 한글자 : 1 byte
+	//한글 한글자 : 2 byte
+	//한 글
+	//En gl ish
+	//char 크기 : 1 byte
 	
+	/*char c_array[7] = { 'c','o','d','i','n','g','\0' };*/
+	/*char c_array[6] = { 'c','o','d','i','n','g'};
+	printf("%s\n", c_array);*/
 
-	return 0;
-}
+	//char c_array[10] = { 'c','o','d','i','n','g' };
+	///*printf("%s\n", c_array);*/
+	//for (int i = 0; i < sizeof(c_array); i++)
+	//{
+	//	printf("%c\n", c_array[i]);
+	//}
+
+	//for (int i = 0; i < sizeof(c_array); i++)
+	//{
+	//	printf("%d\n", c_array[i]); //ASCII 코드 값 출력 (null 문자 0으로 입력됨)
+	//}
+
+	//문자열 입력받기 : 경찰서 조서 쓰기 예제
+
+	//char name[256];
+	//printf("이름을 입력하세요 : ");
+	//scanf_s("%s", name, sizeof(name));
+	//printf("%s\n", name);
+
+	//참고 : ASCII코드? ANSI (미국표준협회) 에서 제시한 표준 코드 체계
+	//7bit, 총 128 개 코드 (0~127)
+	//a : 97 (문자 a의 아스키코드 정수값)
+	//A : 65
+	//0 : 48
+
+	/*printf("%c\n", 'a');
+	printf("%d\n", 'a');
+
+	printf("%c\n", 'b');
+	printf("%d\n", 'b');
+
+	printf("%c\n", 'A');
+	printf("%d\n", 'A');
+
+	printf("%c\n", '\0');
+	printf("%d\n", '\0');*/
+
+	//printf("%c\n", '0');
+	//printf("%d\n", '0');
+
+	//printf("%c\n", '1');
+	//printf("%d\n", '1');
+
+	//참고2 : 0~127 사이의 아스키코드 정수값에 해당하는 문자 확인
+	for (int i = 0; i < 128; i++)
+	{
+		printf("아스키코드 정수 %d : %c\n", i, i);
+		}
+		return 0;
+	}
